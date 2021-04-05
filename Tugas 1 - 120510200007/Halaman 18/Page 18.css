@@ -1,0 +1,116 @@
+body{
+    background-color: burlywood;
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+    color: black;
+}
+.container{
+    display:-webkit-flex;
+    display: flex;
+    border-style: solid;
+    border-color: rgb(243, 153, 89);
+}
+nav{
+    width: 200px;
+    border-style: solid;
+    border-color: rgb(114, 68, 8);
+}
+.flex-column{
+    -webkit-flex: 1;
+    flex: 1;
+    border-color: darkgoldenrod;
+    border-style: solid;
+    text-align: justify;
+}
+.initial{
+    -webkit-flex:initial;
+    flex: initial;
+    width: 200px;
+    min-width: 100px;
+    border-style: solid;
+    border-color: rgb(83, 61, 4);
+}
+.none{
+    -webkit-flex: none;
+    flex: none;
+    width: 200px;
+    border-style: solid;
+    border-color: rgb(56, 41, 3);
+}
+.flex1{
+    -webkit-flex: 1;
+    flex: 1;
+    border-style: solid;
+    border-color: rgb(54, 39, 2);
+}
+.flex2{
+    -webkit-flex:2;
+    flex: 2;
+    border-style: solid;
+    border-color: rgb(8, 6, 0);
+}
+.vertical-container{
+    height: 300px;
+    display: -webkit-flex;  
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: rgb(151, 109, 3);
+}
+.inside{
+    border-style: solid ridge;
+    border-color: rgb(139, 78, 8);
+}
+.button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(223, 179, 84);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+ }
+ .button span{
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button span::after{
+     content: '\00bb';
+     position:absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button:hover span{
+     padding-right:25px;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button:hover span::after{
+     opacity: 1;
+     right: 0;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }

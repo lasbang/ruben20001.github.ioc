@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(196, 214, 94);
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20pt;
+    color: black;
+    text-align: center;
+}
+nav{
+    float: left;
+    width: 200px;
+    border-style: solid;
+    color: rgb(148, 95, 35);
+}
+section{
+    margin-left: 200px;
+    border-style: solid;
+    color: rgb(102, 86, 13);
+    text-align: justify;
+    font-family: fantasy;
+    font-size: 12pt;
+}
+.clearfix{
+    overflow: auto;
+    zoom: 1;
+    border-style: solid;
+    color: coral;
+}
+.button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(136, 135, 57);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+ }
+ .button span{
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button span::after{
+     content: '\00bb';
+     position:absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button:hover span{
+     padding-right:25px;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button:hover span::after{
+     opacity: 1;
+     right: 0;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ 

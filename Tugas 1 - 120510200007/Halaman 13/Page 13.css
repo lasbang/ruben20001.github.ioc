@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(250, 241, 207);
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20pt;
+    color: black;
+    text-align: center;
+}
+article img{
+    float: right;
+    width: 30%;
+}
+.clearfix{
+    overflow: auto;
+    zoom: 1;
+    border-style: solid;
+    color: coral;
+    text-align: justify;
+}
+nav{
+    float: left;
+    width: 25%;
+    border-style: solid;
+    color: rgb(238, 62, 62) ;
+} 
+section{
+    margin-left: 25%;
+    border-style: solid;
+    border-color: rgb(243, 145, 145);
+    text-align: justify;
+    font-family: cursive;
+    font-size: 12pt;
+}
+.container{
+    position:relative;
+    border-color: rgb(243, 104, 53);
+    border-style: solid;
+}
+.button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(219, 194, 80);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+ }
+ .button span{
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button span::after{
+     content: '\00bb';
+     position:absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button:hover span{
+     padding-right:25px;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button:hover span::after{
+     opacity: 1;
+     right: 0;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }

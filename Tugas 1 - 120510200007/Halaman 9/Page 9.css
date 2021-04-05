@@ -1,0 +1,72 @@
+body{
+    background-color: papayawhip;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    color: rgb(189, 177, 6);
+    text-align: center;
+}
+div{
+    font-family: monospace;
+    font-size: 15pt;
+    text-align: justify;
+    margin: 0 0 1em 1em;
+}
+img{
+    float: right;
+    margin: 0 0 1em 1em;
+}
+.button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(248, 174, 78);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+ }
+ .button span{
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button span::after{
+     content: '\00bb';
+     position:absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button:hover span{
+     padding-right:25px;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button:hover span::after{
+     opacity: 1;
+     right: 0;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ a{
+     text-align: center;
+     font-size: 16pt;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }

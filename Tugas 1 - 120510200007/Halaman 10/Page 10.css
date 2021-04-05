@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(206, 201, 197);
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.box{
+    float:left;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+    text-align: justify;
+    font-family: fantasy;
+    border-style: double;
+    border-color: hotpink;
+}
+.afterbox{
+    clear:left;
+    border-style: ridge double;
+    border-color: rgba(255, 0, 0, 0.199) ;
+    text-align: justify;
+    font-family: monospace;
+    font-size: 12pt;
+}
+.section1{
+    width: 300px;
+    height: 250px;
+    border-style: solid dotted;
+    border-color: rgba(255, 0, 0, 0.199);
+    font-family: monospace;
+    font-size: 12pt;
+    text-align: justify;
+}
+.button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(92, 87, 82);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+ }
+ .button span{
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     transition: 0.5;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button span::after{
+     content: '\00bb';
+     position:absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button:hover span{
+     padding-right:25px;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ .button:hover span::after{
+     opacity: 1;
+     right: 0;
+     font-size: 16pt;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
+ a{
+     text-align: center;
+     font-size: 16pt;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     color: white;
+ }
